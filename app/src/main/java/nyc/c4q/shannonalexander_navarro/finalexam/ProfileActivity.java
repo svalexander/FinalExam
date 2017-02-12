@@ -18,12 +18,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
     private ImageView profileIV;
     private DrawerLayout navigationDrawer;
-    //private ListView listView;
     private RecyclerView navigationDrawerRV;
     private NavDrawerAdapter navigationDrawerAdapter;
-//    private List<String> iconNames = new ArrayList<>();
-//    private TypedArray iconImages;
-
     private List<NavigationItem> navigationItems = new ArrayList<>();
     private ImageButton btnOne;
     private ImageButton btnTwo;
