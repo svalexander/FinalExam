@@ -9,12 +9,11 @@ import android.widget.TextView;
  * Created by shannonalexander-navarro on 2/12/17.
  */
 
-public class NavigationDrawerViewHolder extends RecyclerView.ViewHolder {
-
+public class NavDrawerViewHolder extends RecyclerView.ViewHolder {
     private TextView iconTV;
     private ImageView iconIV;
 
-    public NavigationDrawerViewHolder(View itemView) {
+    public NavDrawerViewHolder(View itemView) {
         super(itemView);
         initViews();
     }

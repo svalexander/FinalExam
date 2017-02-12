@@ -15,6 +15,7 @@
             android:id="@+id/headerIV"
             android:layout_width="@dimen/oneFifty"
             android:layout_height="@dimen/oneFifty"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/profile" />
     </LinearLayout>
 </LinearLayout>

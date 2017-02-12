@@ -18,8 +18,8 @@ public class SettingsViewHolder extends RecyclerView.ViewHolder {
         settingsTV = (TextView) itemView.findViewById(R.id.settingsTV);
     }
 
-    public void bind(Integer anInteger) {
-        //this is not finished, the text should be set properly here
-        settingsTV.setText(anInteger);
+    public void bind(int anInteger) {
+
+        settingsTV.setText("Setting - " + String.valueOf(anInteger));
     }
 }

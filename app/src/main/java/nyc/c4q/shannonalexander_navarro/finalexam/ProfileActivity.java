@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageButton;
@@ -13,13 +14,16 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProfileActivity extends AppCompatActivity implements View.OnClickListener{
+public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageView profileIV;
     private DrawerLayout navigationDrawer;
     //private ListView listView;
     private RecyclerView navigationDrawerRV;
-    private NavigationDrawerAdapter navigationDrawerAdapter;
+    private NavDrawerAdapter navigationDrawerAdapter;
+//    private List<String> iconNames = new ArrayList<>();
+//    private TypedArray iconImages;
+
     private List<NavigationItem> navigationItems = new ArrayList<>();
     private ImageButton btnOne;
     private ImageButton btnTwo;
@@ -32,22 +36,26 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_profile);
         addNavItems();
         initViews();
-//        navigationDrawerRV.setLayoutManager(new LinearLayoutManager(getBaseContext(), LinearLayoutManager.VERTICAL, false));
-//        navigationDrawerAdapter = new NavigationDrawerAdapter(navigationItems);
-//        navigationDrawerRV.setAdapter(navigationDrawerAdapter);
-        //navigationDrawer
+      //  initRV();
+    }
 
+    private void initRV() {
+        navigationDrawerRV = (RecyclerView) findViewById(R.id.nav_rv);
+        navigationDrawerRV.setLayoutManager(new LinearLayoutManager(ProfileActivity.this));
+        navigationDrawerAdapter = new NavDrawerAdapter(navigationItems);
+        navigationDrawerRV.setAdapter(navigationDrawerAdapter);
     }
 
     private void addNavItems() {
         navigationItems.add(new NavigationItem(R.drawable.heart, "Button 1"));
         navigationItems.add(new NavigationItem(R.drawable.message, "Button 2"));
+        navigationItems.add(new NavigationItem(R.drawable.settings, "Button 3"));
+        navigationItems.add(new NavigationItem(R.drawable.logout, "Logout"));
     }
 
     private void initViews() {
         navigationDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         profileIV = (ImageView) findViewById(R.id.profileIV);
-        navigationDrawerRV = (RecyclerView) findViewById(R.id.nav_rv);
         btnOne = (ImageButton) findViewById(R.id.imageBtnOne);
         btnTwo = (ImageButton) findViewById(R.id.imageBtnTwo);
         btnThree = (ImageButton) findViewById(R.id.imageBtnThree);
@@ -60,7 +68,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.imageBtnOne:
                 Toast.makeText(getBaseContext(), "Selected Heart Activity", Toast.LENGTH_SHORT).show();
                 break;
@@ -78,10 +86,4 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         }
     }
 
-
-//    private void makeToasts(){
-//        switch (View view){
-//
-//        }
-//    }
 }
