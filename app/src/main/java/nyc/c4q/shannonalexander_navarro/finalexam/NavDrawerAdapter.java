@@ -21,7 +21,7 @@ public class NavDrawerAdapter extends RecyclerView.Adapter {
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.nav_drawer_rv, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.nav_list_item, parent, false);
         return new NavDrawerViewHolder(itemView);
     }
 
@@ -30,7 +30,8 @@ public class NavDrawerAdapter extends RecyclerView.Adapter {
 
         NavDrawerViewHolder navigationDrawerViewHolder = (NavDrawerViewHolder) holder;
         NavigationItem aNavItem = navItems.get(position);
-        navigationDrawerViewHolder.bind(position);
+       // navigationDrawerViewHolder.bind(position);
+        navigationDrawerViewHolder.bind(aNavItem);
     }
 
     @Override
