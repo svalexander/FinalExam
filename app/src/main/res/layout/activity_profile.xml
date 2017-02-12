@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_profile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,82 +13,93 @@
         android:layout_width="@dimen/oneFifty"
         android:layout_height="@dimen/oneFifty"
         android:layout_gravity="center_horizontal"
-        android:paddingBottom="@dimen/twoHundred" />
+        android:background="@drawable/profile"
+        android:layout_marginBottom="@dimen/twoHundred"/>
 
     <LinearLayout
-        android:id="@+id/rowImageBtns"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/imageBtnOne"
-            android:src="@drawable/heart"
-            android:layout_width="@dimen/sixty"
-            android:layout_height="@dimen/sixty"
-            android:layout_margin="@dimen/ten"
-            android:scaleType="fitXY" />
-
-        <ImageButton
-            android:id="@+id/imageBtnTwon"
-            android:layout_width="@dimen/sixty"
-            android:layout_height="@dimen/sixty"
-            android:layout_margin="@dimen/ten"
-            android:scaleType="fitXY" />
-
-        <ImageButton
-            android:id="@+id/imageBtnThree"
-            android:layout_width="@dimen/sixty"
-            android:layout_height="@dimen/sixty"
-            android:layout_margin="@dimen/ten"
-            android:scaleType="fitXY" />
-
-        <ImageButton
-            android:id="@+id/imageBtnFour"
-            android:layout_width="@dimen/sixty"
-            android:layout_height="@dimen/sixty"
-            android:layout_margin="@dimen/ten"
-            android:scaleType="fitXY" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/rowTextViews"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tvforBtnOne"
-            android:layout_width="@dimen/sixty"
+        <LinearLayout
+            android:id="@+id/rowImageBtns"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/ten"
-            android:text="@string/btnOne"
-            android:textAlignment="center" />
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tvforBtnTwo"
-            android:layout_width="@dimen/sixty"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/ten"
-            android:text="@string/btnTwo"
-            android:textAlignment="center" />
+            <ImageButton
+                android:id="@+id/imageBtnOne"
+                android:layout_width="@dimen/sixty"
+                android:layout_height="@dimen/sixty"
+                android:layout_margin="@dimen/ten"
+                android:scaleType="fitXY"
+                android:src="@drawable/heart" />
 
-        <TextView
-            android:id="@+id/tvforBtnThree"
-            android:layout_width="@dimen/sixty"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/ten"
-            android:text="@string/btnThree"
-            android:textAlignment="center" />
+            <ImageButton
+                android:id="@+id/imageBtnTwo"
+                android:layout_width="@dimen/sixty"
+                android:layout_height="@dimen/sixty"
+                android:layout_margin="@dimen/ten"
+                android:scaleType="fitXY"
+                android:src="@drawable/message" />
 
-        <TextView
-            android:id="@+id/tvforBtnFour"
-            android:layout_width="@dimen/sixty"
+            <ImageButton
+                android:id="@+id/imageBtnThree"
+                android:layout_width="@dimen/sixty"
+                android:layout_height="@dimen/sixty"
+                android:layout_margin="@dimen/ten"
+                android:scaleType="fitXY"
+                android:src="@drawable/settings" />
+
+            <ImageButton
+                android:id="@+id/imageBtnFour"
+                android:layout_width="@dimen/sixty"
+                android:layout_height="@dimen/sixty"
+                android:layout_margin="@dimen/ten"
+                android:scaleType="fitXY"
+                android:src="@drawable/logout" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowTextViews"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/ten"
-            android:text="@string/logout"
-            android:textAlignment="center" />
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvforBtnOne"
+                android:layout_width="@dimen/sixty"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:text="@string/btnOne"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvforBtnTwo"
+                android:layout_width="@dimen/sixty"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:text="@string/btnTwo"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvforBtnThree"
+                android:layout_width="@dimen/sixty"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:text="@string/btnThree"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvforBtnFour"
+                android:layout_width="@dimen/sixty"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:text="@string/logout"
+                android:textAlignment="center" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
