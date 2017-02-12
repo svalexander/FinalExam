@@ -9,6 +9,7 @@
         android:id="@+id/item_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:orientation="horizontal">
 
         <ImageView
@@ -16,6 +17,9 @@
             android:layout_width="@dimen/forty"
             android:layout_height="@dimen/forty"
             android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/five"
+            android:layout_marginBottom="@dimen/twenty"
+            android:layout_marginTop="@dimen/twenty"
             android:paddingStart="@dimen/five" />
 
         <TextView
