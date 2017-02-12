@@ -32,7 +32,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_profile);
         addNavItems();
         initViews();
-      //  initRV();
+       // initRV();
     }
 
     private void initRV() {

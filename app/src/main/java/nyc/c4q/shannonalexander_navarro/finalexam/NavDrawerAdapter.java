@@ -30,7 +30,7 @@ public class NavDrawerAdapter extends RecyclerView.Adapter {
 
         NavDrawerViewHolder navigationDrawerViewHolder = (NavDrawerViewHolder) holder;
         NavigationItem aNavItem = navItems.get(position);
-        navigationDrawerViewHolder.bind(aNavItem);
+        navigationDrawerViewHolder.bind(position);
     }
 
     @Override

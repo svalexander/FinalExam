@@ -22,8 +22,26 @@ public class NavDrawerViewHolder extends RecyclerView.ViewHolder {
         iconTV = (TextView) itemView.findViewById(R.id.itemTV);
         iconIV = (ImageView) itemView.findViewById(R.id.itemIV);
     }
-    public void bind(NavigationItem aNavItem) {
-        iconTV.setText(aNavItem.geticonText());
-        iconIV.setImageResource(aNavItem.getIcon());
+//    public void bind(NavigationItem aNavItem) {
+//        iconTV.setText(aNavItem.geticonText());
+//        iconIV.setImageResource(aNavItem.getIcon());
+//
+//        switch ()
+//    }
+
+    public void bind(int position) {
+        switch (position){
+            case 0: iconTV.setText("Button 1");
+                iconIV.setImageResource(R.drawable.heart);
+                break;
+            case 1: iconTV.setText("Button 2");
+                iconIV.setImageResource(R.drawable.message);
+                break;
+            case 2: iconTV.setText("Button 3");
+                iconIV.setImageResource(R.drawable.settings);
+                break;
+            case 3: iconTV.setText("Button 4");
+                iconIV.setImageResource(R.drawable.logout);
+        }
     }
 }
