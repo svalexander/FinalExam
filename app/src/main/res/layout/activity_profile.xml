@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="nyc.c4q.shannonalexander_navarro.finalexam.ProfileActivity">
+    tools:context="nyc.c4q.shannonalexander_navarro.finalexam.views.ProfileActivity">
 
     <ImageView
         android:id="@+id/profileIV"

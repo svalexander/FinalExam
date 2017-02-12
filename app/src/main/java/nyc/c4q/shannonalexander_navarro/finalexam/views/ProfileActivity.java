@@ -1,4 +1,4 @@
-package nyc.c4q.shannonalexander_navarro.finalexam;
+package nyc.c4q.shannonalexander_navarro.finalexam.views;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import nyc.c4q.shannonalexander_navarro.finalexam.controller.NavDrawerAdapter;
+import nyc.c4q.shannonalexander_navarro.finalexam.model.NavigationItem;
+import nyc.c4q.shannonalexander_navarro.finalexam.R;
 
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
 

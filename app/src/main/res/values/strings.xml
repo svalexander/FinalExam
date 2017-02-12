@@ -7,17 +7,5 @@
     <string name="btnTwo">Button 2</string>
     <string name="btnThree">Button 3</string>
     <string name="logout">Logout</string>
-    <string-array name="navigation_drawer_btn_names">
-        <item>Button 1</item>
-        <item>Button 2</item>
-        <item>Button 3</item>
-        <item>Submit</item>
-    </string-array>
-    
-    <string-array name="nav_drawer_icon_array">
-        <item>@drawable/heart</item>
-        <item>@drawable/message</item>
-        <item>@drawable/settings</item>
-        <item>@drawable/logout</item>
-    </string-array>
+   
 </resources>

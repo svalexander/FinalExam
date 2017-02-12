@@ -1,9 +1,12 @@
-package nyc.c4q.shannonalexander_navarro.finalexam;
+package nyc.c4q.shannonalexander_navarro.finalexam.views;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import nyc.c4q.shannonalexander_navarro.finalexam.R;
+import nyc.c4q.shannonalexander_navarro.finalexam.model.NavigationItem;
 
 /**
  * Created by shannonalexander-navarro on 2/12/17.
@@ -12,6 +15,7 @@ import android.widget.TextView;
 public class NavDrawerViewHolder extends RecyclerView.ViewHolder {
     private TextView iconTV;
     private ImageView iconIV;
+
 
     public NavDrawerViewHolder(View itemView) {
         super(itemView);

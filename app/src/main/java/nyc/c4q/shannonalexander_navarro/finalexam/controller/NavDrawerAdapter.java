@@ -1,4 +1,4 @@
-package nyc.c4q.shannonalexander_navarro.finalexam;
+package nyc.c4q.shannonalexander_navarro.finalexam.controller;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,6 +7,10 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import nyc.c4q.shannonalexander_navarro.finalexam.model.NavigationItem;
+import nyc.c4q.shannonalexander_navarro.finalexam.R;
+import nyc.c4q.shannonalexander_navarro.finalexam.views.NavDrawerViewHolder;
 
 /**
  * Created by shannonalexander-navarro on 2/12/17.
@@ -30,7 +34,6 @@ public class NavDrawerAdapter extends RecyclerView.Adapter {
 
         NavDrawerViewHolder navigationDrawerViewHolder = (NavDrawerViewHolder) holder;
         NavigationItem aNavItem = navItems.get(position);
-       // navigationDrawerViewHolder.bind(position);
         navigationDrawerViewHolder.bind(aNavItem);
     }
 

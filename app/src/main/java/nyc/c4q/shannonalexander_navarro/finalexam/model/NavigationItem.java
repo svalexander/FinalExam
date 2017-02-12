@@ -1,4 +1,4 @@
-package nyc.c4q.shannonalexander_navarro.finalexam;
+package nyc.c4q.shannonalexander_navarro.finalexam.model;
 
 /**
  * Created by shannonalexander-navarro on 2/12/17.
